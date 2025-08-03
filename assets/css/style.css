@@ -3,14 +3,6 @@
 \*-----------------------------------*/
 
 
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -23,51 +15,58 @@
 
   /* gradient */
 
+  --bg-gradient-PlatinumDusk: linear-gradient(
+    to bottom right, 
+    #1A1C22 3%,
+    #5A5C6A 3%, 
+    #A7A8B2 97%
+  );
+
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(240, 1%, 25%) 3%, 
-    hsl(0, 0%, 19%) 97%
+    #5A5C6A 3%, 
+    #1A1C22 97%
   );
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
-    hsla(240, 1%, 18%, 0.251) 0%, 
-    hsla(240, 2%, 11%, 0) 100%
-  ), hsl(240, 2%, 13%);
+    hsla(26, 6%, 25%, 0.251) 0%, 
+    hsla(26, 6%, 15%, 0) 100%
+  ), #1A1C22;
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    hsl(45, 100%, 71%) 0%, 
-    hsla(36, 100%, 69%, 0) 50%
+    #A7A8B2 0%, 
+    hsla(26, 6%, 69%, 0) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    hsla(45, 100%, 71%, 0.251) 0%, 
-    hsla(35, 100%, 68%, 0) 59.86%
-  ), hsl(240, 2%, 13%);
+    hsla(26, 6%, 71%, 0.251) 0%, 
+    hsla(26, 6%, 68%, 0) 59.86%
+  ), #1A1C22;
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(0, 0%, 25%) 0%, 
-    hsla(0, 0%, 25%, 0) 50%
+    #5A5C6A 0%, 
+    hsla(26, 6%, 25%, 0) 50%
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
-    hsl(45, 100%, 72%), 
-    hsl(35, 100%, 68%)
+    #A7A8B2, 
+    #5A5C6A
   );
 
   /* solid */
 
-  --jet: hsl(0, 0%, 22%);
-  --onyx: hsl(240, 1%, 17%);
-  --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 12%);
-  --smoky-black: hsl(0, 0%, 7%);
+  --jet: #5A5C6A;
+  --onyx: #1A1C22;
+  --eerie-black-1: #1A1C22;
+  --eerie-black-2: #1A1C22;
+  --smoky-black: #0F1014;
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --vegas-gold: hsl(45, 54%, 58%);
-  --light-gray: hsl(0, 0%, 84%);
-  --light-gray-70: hsla(0, 0%, 84%, 0.7);
-  --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --orange-yellow-crayola: #A7A8B2;
+  --vegas-gold: #5A5C6A;
+  --light-gray: #A7A8B2;
+  --light-gray-70: hsla(26, 6%, 84%, 0.7);
+  --bittersweet-shimmer: #8B8C9A;
 
   /**
    * typography
@@ -153,9 +152,17 @@ input, textarea {
 
 :focus { outline-color: var(--orange-yellow-crayola); }
 
-html { font-family: var(--ff-poppins); }
+html { 
+  font-family: var(--ff-poppins); 
+  margin: 0;
+  padding: 0;
+}
 
-body { background: #61619b; }
+body { 
+  background: var(--bg-gradient-PlatinumDusk); 
+  padding-top: 0;
+  margin-top: 0;
+}
 
 
 
@@ -301,7 +308,7 @@ article.active {
 \*-----------------------------------*/
 
 main {
-  margin: 15px 12px;
+  margin: 5px 12px;
   margin-bottom: 75px;
   min-width: 259px;
 }
@@ -315,7 +322,7 @@ main {
 \*-----------------------------------*/
 
 .sidebar {
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   max-height: 112px;
   overflow: hidden;
   transition: var(--transition-2);
@@ -1772,7 +1779,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   body::-webkit-scrollbar { width: 20px; }
 
-  body::-webkit-scrollbar-track { background: #303068; }
+  body::-webkit-scrollbar-track { background: #5A5C6A; }
 
   body::-webkit-scrollbar-thumb {
     border: 5px solid var(--smoky-black);
@@ -1894,3 +1901,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/**
+ * copyright 2022 @codewithsadee
+ */
